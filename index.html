@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whisky Drop | Taste a new whisky every month</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -13,11 +14,29 @@
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm"><!--Navigation Links-->
         <a class="navbar-brand" href="/">Whiskey Drop</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Whiskys
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Scotish</a>
+                        <a class="dropdown-item" href="#">Irish</a>
+                        <a class="dropdown-item" href="#">Welsh</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">American</a>
+                    </div>
+                </li>
                 <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
             </ul>
+        </div>
             <div class="d-none d-md-block"><!--Marketing links-->
                 <p class="navbar-test my-auto mr-2"><i>Great whisky delivered to your door!</i></p>
                 <a href="/login">Sign In / Sign Up</a>
@@ -42,7 +61,7 @@
                         <s class="d-none d-sm-inline">£19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark> The first month is FREE!</mark></strong></p>
-                    <button class="btn btn-success btn-lg">Sign up!</button>
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>                    
                 </section><!--End of Callout Section-->
             </div> 
@@ -154,6 +173,29 @@
                 </div>
             </div>
         </section><!--End of Table section-->
-   </article> 
+   </article>
+
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up to Whisky Drop!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
