@@ -2,7 +2,27 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.alert-container {}
+.container-wrapper {
+
+}
+
+.container-wrapper-green {
+    background-color: #2d9a00;
+    color: #fff;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #d39e00;
+    border-bottom-color: #d39e00;
+}
 
 .callout-container {
     height: 100vh;
@@ -33,7 +53,21 @@ body {
 
 .features-container {}
 
-.favourites-container {}
+.favourites-container {
+    text-align: center;
+}
+
+/*-----Page Headers----*/
+
+.page-header {
+    border-bottom: 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
 
 /*------Block Dividers---*/
 
@@ -41,16 +75,57 @@ body {
     width: 150px;
     height: 5px;
     border: 0;
-    background-color: rgb(126, 235, 126);
+    background-color: rgb(124, 120, 120);
 }
 
 .block-divider--green {
     background-color: rgb(126, 235, 126);
 }
 
+.block-divider--white {
+    background-color: #fff;
+}
+
 .block-divider--short {
     width: 75px;
 }
+
+/*-----Content Container----*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/*------NAVBAR---------*/
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;    
+}
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
 
 /*------JUMBOTRON------*/
 
@@ -62,7 +137,6 @@ body {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
 }
 
 .jumbotron .lead {
@@ -97,4 +171,23 @@ body {
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}
+
+.features {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table-header  {
+    font-size: 20px;
+}
+
+.features .btn {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:#2d9a00;
 }
